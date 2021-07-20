@@ -18,7 +18,7 @@ type RotationGroupUnion = {
     | RotationGroupKeys3]: RotationRequest[Prop]
 };
 
-type RotationGroupUnionDoesntExtendKeyofRorationRequest = "Rotation Group union doesn't extend keyof rotationRequest";
+type RotaionGroupUnionDoesntExtendRotationReuqest = "RotationGroupUnion doesn't extend RotationRequest";
 
 type RotationFormGroup1 = Record<RotationGroupKeys1, FormControl>;
 type RotationFormGroup2 = Record<RotationGroupKeys2, FormControl>;
@@ -30,7 +30,7 @@ type RotationFrom = RotationGroupUnion extends RotationRequest
       'group-2': FormGroup;
       'group-3': FormGroup;
     }
-  : RotationGroupUnionDoesntExtendKeyofRorationRequest;
+  : RotaionGroupUnionDoesntExtendRotationReuqest;
 
 @Component({
   selector: 'my-app',
